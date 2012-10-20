@@ -191,58 +191,156 @@
     <Compile Include="en_de_crypt.vb">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="frmaddaccomodation.vb" />
-    <Compile Include="frmaddcasual.vb" />
-    <Compile Include="frmAddClients.vb" />
-    <Compile Include="frmAddContacts.vb" />
-    <Compile Include="frmaddequip.vb" />
-    <Compile Include="frmAddLead.vb" />
-    <Compile Include="frmaddmaintenanceinfo.vb" />
-    <Compile Include="frmaddsickleave.vb" />
-    <Compile Include="frmadmin.vb" />
-    <Compile Include="frmadminclients.vb" />
-    <Compile Include="frmadminequip.vb" />
-    <Compile Include="frmadminjobs.vb" />
-    <Compile Include="frmadminleads.vb" />
-    <Compile Include="frmadminpersonnel.vb" />
-    <Compile Include="frmconsettings.vb" />
-    <Compile Include="frmdepartments.vb" />
-    <Compile Include="frmDragDrop.vb" />
-    <Compile Include="frmEditClients.vb" />
-    <Compile Include="frmEditcontact.vb" />
-    <Compile Include="frmeditequip.vb" />
-    <Compile Include="frmeditequipassign.vb" />
-    <Compile Include="frmEditJob.vb" />
-    <Compile Include="frmEditLead.vb" />
-    <Compile Include="frmeditmaintenanceinfo.vb" />
-    <Compile Include="frmequipmentactions.vb" />
-    <Compile Include="frmExplorerLike.vb" />
-    <Compile Include="frmhiredequip.vb" />
-    <Compile Include="frmhistory.vb" />
-    <Compile Include="frmHome.vb" />
-    <Compile Include="frminventories.vb" />
-    <Compile Include="frmit.vb" />
-    <Compile Include="frmjobdescription.vb" />
-    <Compile Include="frmjobs.vb" />
-    <Compile Include="frmjobsheet.vb" />
-    <Compile Include="frmlogin2.vb" />
-    <Compile Include="frmMe.vb" />
-    <Compile Include="frmnewpersonnel.vb" />
-    <Compile Include="frmpersonneladmin.vb" />
-    <Compile Include="frmRamaniequip.vb" />
-    <Compile Include="frmreportoptions.vb" />
-    <Compile Include="frmservice.vb" />
-    <Compile Include="frmTabControl.vb" />
-    <Compile Include="frmtimeoff.vb" />
-    <Compile Include="frmtimesheet.vb" />
-    <Compile Include="frmtimesheetmanager.vb" />
-    <Compile Include="frmtojobs.vb" />
-    <Compile Include="frmtravel.vb" />
-    <Compile Include="frmword.vb" />
+    <Compile Include="frmaddaccomodation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaddcasual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddClients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddContacts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaddequip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddLead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaddmaintenanceinfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaddsickleave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadminclients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadminequip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadminjobs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadminleads.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadminpersonnel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdepartments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDragDrop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditClients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditcontact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmeditequip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmeditequipassign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditJob.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditLead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmeditmaintenanceinfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmequipmentactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExplorerLike.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmhiredequip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmhistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminventories.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmjobdescription.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmjobs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmjobsheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnewpersonnel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpersonneladmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRamaniequip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmreportoptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmservice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTabControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtimeoff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtimesheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtimesheetmanager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtojobs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtravel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmword.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="myfunctions.vb">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="print form.vb" />
+    <Compile Include="print form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PrintHandler.vb">
       <SubType>Code</SubType>
     </Compile>
