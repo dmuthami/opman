@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA960086-714E-436C-A0B4-C11CEE7D5CAA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>opman.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>OPman</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace />
+    <StartupObject>frmlogin2</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>OPman.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>OPman.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile />
+    <DefineConstants />
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSMask">
+      <Guid>{C932BA88-4374-101B-A56C-00AA003668DC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+    </COMReference>
+    <COMReference Include="MSMask">
+      <Guid>{C932BA88-4374-101B-A56C-00AA003668DC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <Reference Include="ADODB">
+      <Name>adodb</Name>
+      <HintPath>bin\adodb.dll</HintPath>
+    </Reference>
+    <Reference Include="AMS.Profile">
+      <Name>AMS.Profile</Name>
+      <HintPath>bin\AMS.Profile.dll</HintPath>
+    </Reference>
+    <Reference Include="AMS.TextBox">
+      <Name>AMS.TextBox</Name>
+      <HintPath>bin\AMS.TextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.MSMask">
+      <Name>AxInterop.MSMask</Name>
+      <HintPath>obj\AxInterop.MSMask.dll</HintPath>
+    </Reference>
+    <Reference Include="exporttoexcel">
+      <Name>exporttoexcel</Name>
+      <HintPath>bin\exporttoexcel.dll</HintPath>
+    </Reference>
+    <Reference Include="ExpTreeLib">
+      <Name>ExpTreeLib</Name>
+      <HintPath>bin\ExpTreeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSMask">
+      <Name>Interop.MSMask</Name>
+      <HintPath>bin\Interop.MSMask.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Office">
+      <Name>Interop.Office</Name>
+      <HintPath>bin\Interop.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE">
+      <Name>Interop.VBIDE</Name>
+      <HintPath>bin\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Word">
+      <Name>Interop.Word</Name>
+      <HintPath>bin\Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls">
+      <Name>Stimulsoft.Controls</Name>
+      <HintPath>bin\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="VSEssentials">
+      <Name>VSEssentials</Name>
+      <HintPath>bin\VSEssentials.dll</HintPath>
+    </Reference>
+    <Reference Include="WinWordControl">
+      <Name>WinWordControl</Name>
+      <HintPath>bin\WinWordControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Class1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="crypt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataGridPrinter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="datemanipulation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="en_de_crypt.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmaddaccomodation.vb" />
+    <Compile Include="frmaddcasual.vb" />
+    <Compile Include="frmAddClients.vb" />
+    <Compile Include="frmAddContacts.vb" />
+    <Compile Include="frmaddequip.vb" />
+    <Compile Include="frmAddLead.vb" />
+    <Compile Include="frmaddmaintenanceinfo.vb" />
+    <Compile Include="frmaddsickleave.vb" />
+    <Compile Include="frmadmin.vb" />
+    <Compile Include="frmadminclients.vb" />
+    <Compile Include="frmadminequip.vb" />
+    <Compile Include="frmadminjobs.vb" />
+    <Compile Include="frmadminleads.vb" />
+    <Compile Include="frmadminpersonnel.vb" />
+    <Compile Include="frmconsettings.vb" />
+    <Compile Include="frmdepartments.vb" />
+    <Compile Include="frmDragDrop.vb" />
+    <Compile Include="frmEditClients.vb" />
+    <Compile Include="frmEditcontact.vb" />
+    <Compile Include="frmeditequip.vb" />
+    <Compile Include="frmeditequipassign.vb" />
+    <Compile Include="frmEditJob.vb" />
+    <Compile Include="frmEditLead.vb" />
+    <Compile Include="frmeditmaintenanceinfo.vb" />
+    <Compile Include="frmequipmentactions.vb" />
+    <Compile Include="frmExplorerLike.vb" />
+    <Compile Include="frmhiredequip.vb" />
+    <Compile Include="frmhistory.vb" />
+    <Compile Include="frmHome.vb" />
+    <Compile Include="frminventories.vb" />
+    <Compile Include="frmit.vb" />
+    <Compile Include="frmjobdescription.vb" />
+    <Compile Include="frmjobs.vb" />
+    <Compile Include="frmjobsheet.vb" />
+    <Compile Include="frmlogin2.vb" />
+    <Compile Include="frmMe.vb" />
+    <Compile Include="frmnewpersonnel.vb" />
+    <Compile Include="frmpersonneladmin.vb" />
+    <Compile Include="frmRamaniequip.vb" />
+    <Compile Include="frmreportoptions.vb" />
+    <Compile Include="frmservice.vb" />
+    <Compile Include="frmTabControl.vb" />
+    <Compile Include="frmtimeoff.vb" />
+    <Compile Include="frmtimesheet.vb" />
+    <Compile Include="frmtimesheetmanager.vb" />
+    <Compile Include="frmtojobs.vb" />
+    <Compile Include="frmtravel.vb" />
+    <Compile Include="frmword.vb" />
+    <Compile Include="myfunctions.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="print form.vb" />
+    <Compile Include="PrintHandler.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="processdemo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="taskclass.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="validation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="georiginea.ico" />
+    <Content Include="opman.ico" />
+    <Content Include="Ramani logo.ico" />
+    <EmbeddedResource Include="frmaddaccomodation.resx">
+      <DependentUpon>frmaddaccomodation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmaddcasual.resx">
+      <DependentUpon>frmaddcasual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddClients.resx">
+      <DependentUpon>frmAddClients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddContacts.resx">
+      <DependentUpon>frmAddContacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmaddequip.resx">
+      <DependentUpon>frmaddequip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddLead.resx">
+      <DependentUpon>frmAddLead.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmaddmaintenanceinfo.resx">
+      <DependentUpon>frmaddmaintenanceinfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmaddsickleave.resx">
+      <DependentUpon>frmaddsickleave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadmin.resx">
+      <DependentUpon>frmadmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadminclients.resx">
+      <DependentUpon>frmadminclients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadminequip.resx">
+      <DependentUpon>frmadminequip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadminjobs.resx">
+      <DependentUpon>frmadminjobs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadminleads.resx">
+      <DependentUpon>frmadminleads.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadminpersonnel.resx">
+      <DependentUpon>frmadminpersonnel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsettings.resx">
+      <DependentUpon>frmconsettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdepartments.resx">
+      <DependentUpon>frmdepartments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDragDrop.resx">
+      <DependentUpon>frmDragDrop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditClients.resx">
+      <DependentUpon>frmEditClients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditcontact.resx">
+      <DependentUpon>frmEditcontact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmeditequip.resx">
+      <DependentUpon>frmeditequip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmeditequipassign.resx">
+      <DependentUpon>frmeditequipassign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditJob.resx">
+      <DependentUpon>frmEditJob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditLead.resx">
+      <DependentUpon>frmEditLead.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmeditmaintenanceinfo.resx">
+      <DependentUpon>frmeditmaintenanceinfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmequipmentactions.resx">
+      <DependentUpon>frmequipmentactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExplorerLike.resx">
+      <DependentUpon>frmExplorerLike.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmhiredequip.resx">
+      <DependentUpon>frmhiredequip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmhistory.resx">
+      <DependentUpon>frmhistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminventories.resx">
+      <DependentUpon>frminventories.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmit.resx">
+      <DependentUpon>frmit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmjobdescription.resx">
+      <DependentUpon>frmjobdescription.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmjobs.resx">
+      <DependentUpon>frmjobs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmjobsheet.resx">
+      <DependentUpon>frmjobsheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin2.resx">
+      <DependentUpon>frmlogin2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMe.resx">
+      <DependentUpon>frmMe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnewpersonnel.resx">
+      <DependentUpon>frmnewpersonnel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpersonneladmin.resx">
+      <DependentUpon>frmpersonneladmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRamaniequip.resx">
+      <DependentUpon>frmRamaniequip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmreportoptions.resx">
+      <DependentUpon>frmreportoptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmservice.resx">
+      <DependentUpon>frmservice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTabControl.resx">
+      <DependentUpon>frmTabControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtimeoff.resx">
+      <DependentUpon>frmtimeoff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtimesheet.resx">
+      <DependentUpon>frmtimesheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtimesheetmanager.resx">
+      <DependentUpon>frmtimesheetmanager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtojobs.resx">
+      <DependentUpon>frmtojobs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtravel.resx">
+      <DependentUpon>frmtravel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmword.resx">
+      <DependentUpon>frmword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="print form.resx">
+      <DependentUpon>print form.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
